@@ -23,15 +23,12 @@ a{
 html{
     font-size: 62.5%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
 }
 
 body{
     background:#f7f7f7;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 .piccc {
@@ -499,7 +496,7 @@ nav #icon .fa-bars{
     border-top: .1rem solid rgba(0,0,0,.1);
   }
 
-@media (max-width:768px){
+@media (max-width:789px){
     .principal{
         width: 70%;
         line-height: 2.0;
@@ -527,7 +524,7 @@ nav #icon .fa-bars{
     }
     .navbar #icon{
         display: block;
-        margin-right: 10px;
+         
     }
     .navbar ul.show{
         left: 0;

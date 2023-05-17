@@ -21,71 +21,90 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
+
 }
 
 body {
   background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+
 }
 
-/* section {
-  padding: 2rem 9%;
-} */
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  background: #fff;
-  padding: 2rem 5%;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    padding: 1.2rem 2%;
+    box-shadow: 0 .9rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.6s;
+    background: #333;
+    align-items: center;
+    
 }
 
-header .logo {
-  font-weight: bolder;
-  font-size: 2.5rem;
-  color: #333;
+header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color:#fff;
 }
 
-header .logo span {
-  color: var(--blue);
+header .logo span{
+    color:var(--blue);
 }
 
-nav {
-  display: flex;
-  gap: 29px;
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 29px;
 }
-
-header .navbar a {
-  color: #333;
-  font-size: 1.7rem;
-  padding: 0 1.5rem;
+header .navbar-two{
+    display: flex;
+    align-items: center;
+} 
+header .navbar-two ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
 }
+header .navbar-two a{
+    color:#fff;
+    font-size: 1.7rem;
+    padding:0 1.5rem;
+    margin-right: 10px;
 
-.navbar {
-  align-items: center;
+   
+}
+nav #icon{
+     display: none;
+}
+nav #icon .fa-bars{
+    font-size: 30px;
+    color: white;
 }
 
 .navbar-two a:hover {
-  color: var(--lightblue);
-  transition: 0.5s;
-  border-radius: 9px;
+    background: white;
+    padding: 10px;
+    color: var(--lightblue);
+    transition: .5s;
+    border-radius: 9px;
 }
 
-.navbar button {
-  background-color: var(--lightblue);
-  border-radius: 18px;
-  padding: 0.6rem;
-  width: 10rem;
+.navbar .btn button {
+    background-color: blue;
+    border-radius: 18px;
+    padding: .7rem;
+    width: 10rem;
+    margin-right: 20px;
 }
-
-.navbar button a:hover {
-  text-decoration: underline;
+.navbar .btn button a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .wrapper {
@@ -172,6 +191,33 @@ header .navbar a {
 }
 
 
+@media (max-width:789px) {
+  .navbar .navbar-two ul {
+    position: absolute;
+    background: #333;
+    display: block;
+    top: 55px;
+    left: -100%;
+    width: max-content;
+    height: 100vh;
+    padding: 50px 40px;
+    transition: all .5s ease-out;
+  }
 
+  .navbar .navbar-two ul li {
+    margin-top: 30px;
+  }
+
+  .navbar #icon {
+    display: block;
+
+  }
+
+  .navbar ul.show {
+    left: 0;
+  }
+
+
+}
 
 

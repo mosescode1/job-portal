@@ -4,33 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="login.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css file link  -->
+     <link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
+    <script>
+                $(document).ready(function () {
+        $("#icon").click(function () {
+            $("ul").toggleClass("show");
+        });
+        });
+    </script>
 <body>
    
-    <header>
+   <header id="bar">
 
-        <a href="#" class="logo"><span>W</span>OK</a>
-    
-        <nav class="navbar">
-            <div class="navbar-two">
-            <a href="index.html">home</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="contact.html">contact</a>
-            <a href="advice.html">Career Advice</a>
-            <a href="findjobs.html">Find Jobs</a>
-            </div>
-            
-            
-                <button><a style="color: white; font-size: 15px;" href="login.html">Login</a></button>
-                <button><a style="color: white; font-size: 15px;" href="register.html">Register</a></button>
-            
-            
-                  
-        </nav>
-    
-    </header> 
+    <a href="#" class="logo"><span>W</span>OK</a>
+
+    <nav class="navbar">
+        <div  class="navbar-two">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="./advice/advice.html">Career Advice</a></li>
+                <li><a href="./find-jobs/findjobs.html">Find Jobs</a></li>
+                <li><!-- <a href="aboutus.html">About Us</a> --></li>
+                <li> <a href="contact.html">contact</a></li>
+            </ul>     
+        </div>
+        <div class="btn">
+            <button><a href="login.html">Login</button>
+            <button><a href="register.html">Register</a></button>
+        </div>
+        <label for="toggle" id="icon">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </label>
+    </nav>
+
+</header> 
 
 
    
@@ -40,6 +53,18 @@
             <div class="field-one"><input type="password" placeholder="Password" required minlength="8"></div>
 
             <div class="field-two"><button>Login</button></div>
+            <div class="check-box">
+                <label for="Remember">
+                    <input type="checkbox"> Remember Me
+                </label>
+                <div class="forget">
+                    <a href="#" target="_blank" rel="noopener noreferrer"> Forget Password ?</a>
+                </div>
+            </div>
+            
+
+            
+
         </form>
     </div>
 
