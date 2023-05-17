@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOK</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="piccc">
+        <img src="./images/photo-9.avif" alt="">
+        <div class="principal">
+            <h1>Find the best Job that Suits You</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem veritatis iusto iure dolorem consequatur officiis totam beatae doloremque quae nobis</p>
+        
+        <button><a  href="login.html">Search a job</a></button>
+        <button><a  href="register.html">Hire a talent</a></button>
+              
+        </div>
+    </div>
+    
+    
+<!-- header section starts  -->
+
+<header id="bar">
+
+    <a href="#" class="logo"><span>W</span>OK</a>
+
+    <nav class="navbar">
+        <div  class="navbar-two">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="./advice/advice.html">Career Advice</a></li>
+                <li><a href="./find-jobs/findjobs.html">Find Jobs</a></li>
+                <li><!-- <a href="aboutus.html">About Us</a> --></li>
+                <li><!-- <a href="contact.html">contact</a> --></li>
+            </ul>     
+        </div>
+        <div class="btn">
+            <button><a href="login.html">Login</button>
+            <button><a href="register.html">Register</a></button>
+        </div>
+        <label for="toggle" id="icon">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </label>
+    </nav>
+
+</header> 
+
+<!-- header section ends -->
+
+
+<!-- job search starts here -->
+    <section class="job-search">
+        <input type="text" name="keyword" placeholder="KEYWORD">
+
+        <select name="Category" id="category">
+            <option value="Category" selected>CATEGORY</option>
+            <option value="1" >Doctor</option>
+            <option value="2" >Mechanical engineer</option>
+            <option value="3" >Web Development</option>
+            <option value="4" >painter</option>
+        </select>
+        <select name="location" id="location">
+            <option value="loacation" selected>LOCATION</option>
+            <option value="1" >LAGOS</option>
+            <option value="2" >OGUN</option>
+            <option value="3" >ABUJA</option>
+            <option value="4" >IBADAN</option>
+        </select>
+        
+        <button type="submit">SEARCH</button>
+
+    </section>
+<!-- job serach ends here -->
+
+<!-- job-category starts here-->
+
+<section class="job-category">
+        <section class="services">
+            <div class="service-text">
+                <h1>Explore Categories</h1>
+            </div>
+                
+            <div class="grid-card">
+                <a href="#">
+                    <div class="card">
+                        <div class="icon">
+                        <i class="fa-solid fa-mail-bulk"></i>
+                    </div>
+                    <div class="text">
+                        <p>Marketing</p> 
+                        <p class="vacancy">125 Vacancies</p>
+                    </div>
+                </div>
+                </a>
+                
+               <a href="#">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <div class="text">
+                            <p>Customer Service</p> 
+                            <p class="vacancy">125 Vacancies</p>
+                        </div>
+                    </div>
+               </a> 
+                
+               <a href="#"> 
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <div class="text">
+                            <p>Human Resource</p> 
+                            <p class="vacancy">125 Vacancies</p>
+                        </div>
+                    </div>
+                </a>
+               
+                <a href="#">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <div class="text">
+                            <p>Project Management</p> 
+                            <p class="vacancy">125 Vacancies</p>
+                        </div>
+                    </div>
+                </a>
+                
+
+                <a href="#">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="text">
+                            <p>Bussiness Development</p> 
+                            <p class="vacancy">125 Vacancies</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-tower-cell"></i>
+                        </div>
+                        <div class="text">
+                            <p>Sales & communication</p> 
+                            <p class="vacancy">125 Vacancies</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-book-open-reader"></i>
+                        </div>
+                        <div class="text">
+                            <p>Teaching and Education</p> 
+                            <p class="vacancy">125 Vacancies</p>
+                        </div>
+                    </div>
+                </a> 
+                
+                <a href="#">
+                    <div class="card">
+                        <div class="icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <div class="text">
+                            <p>Engineering and IT</p> 
+                            <p class="vacancy">125 Vacancies</p>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </section>
+</section>
+<!--job-category ends here -->
+
+
+<section class="something">
+
+    <div class="pic">
+        <img src="./images/photo1.avif" alt="">
+    </div>
+
+    <div class="fillup">
+        <h1>We Help To Get The Best Job And Find A Talent</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit impedit tempore praesentium labore numquam veritatis, molestias modi ab eveniet inventore similique id. Ipsam sequi magni voluptas veritatis exercitationem perferendis, iure fugiat aliquid adipisci! Quasi est fuga pariatur assumenda ipsa suscipit facere exercitationem recusandae nihil. Quasi, necessitatibus laborum earum illum explicabo rerum nisi voluptate veniam modi impedit, magni illo! Repudiandae, dolor?</p>
+        <a href="aboutus.html"><button>Learn More <span>&#8594;</span></button></a>
+    </div>
+    
+    
+</section>
+
+<section class="testimonials">
+    <div class="testimonial-text">
+        <h3>OUR CLIENT SAYS</h3>
+    </div>
+    <div class="testimonial-grid-card card-slider">
+        <div class="testimonial-card">
+            <div class="icon">
+                <i class="fa-sharp fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro molestiae excepturi odit explicabo, rem ut minus, magni quos delectus pariatur cumque laboriosam repellendus consequuntur ex ducimus, nesciunt sunt voluptates non.</p>
+            </div>
+            <div class="img-text">
+                <img src="./images/pic-1.png" alt="">
+                <div class="text">
+                    <h3>Client Name</h3>
+                    <p>Profession</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="icon">
+                <i class="fa-sharp fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro molestiae excepturi odit explicabo, rem ut minus, magni quos delectus pariatur cumque laboriosam repellendus consequuntur ex ducimus, nesciunt sunt voluptates non.</p>
+            </div>
+            <div class="img-text">
+                <img src="./images/pic-1.png" alt="">
+                <div class="text">
+                    <h3>Client Name</h3>
+                    <p>Profession</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="icon">
+                <i class="fa-sharp fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro molestiae excepturi odit explicabo, rem ut minus, magni quos delectus pariatur cumque laboriosam repellendus consequuntur ex ducimus, nesciunt sunt voluptates non.</p>
+            </div>
+            <div class="img-text">
+                <img src="./images/pic-1.png" alt="">
+                <div class="text">
+                    <h3>Client Name</h3>
+                    <p>Profession</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="icon">
+                <i class="fa-sharp fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro molestiae excepturi odit explicabo, rem ut minus, magni quos delectus pariatur cumque laboriosam repellendus consequuntur ex ducimus, nesciunt sunt voluptates non.</p>
+            </div>
+            <div class="img-text">
+                <img src="./images/pic-1.png" alt="">
+                <div class="text">
+                    <h3>Client Name</h3>
+                    <p>Profession</p>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    
+
+</section>
+
+<!-- <section class="contact" id="contact">
+
+    <h1 class="heading"> <span>contact</span> us </h1>
+    
+    <div class="icons-container">
+    
+        <div class="icons">
+            <img src="images/icon-1.png" alt="">
+            <h3>phone number</h3>
+            <p>+234-456-7890.</p>
+            <p>+234-222-3333.</p>
+        </div>
+    
+        <div class="icons">
+            <img src="images/icon-2.png" alt="">
+            <h3>email address</h3>
+            <p>wok@gmail.com.</p>
+            <p>advertise.wok@gmail.com.</p>
+        </div>
+    
+         <div class="icons">
+            <img src="images/icon-3.png" alt="">
+            <h3>office address</h3>
+            <p>5, wok avenue, lagos state.</p>
+        </div>
+    
+    </div>
+
+</section> -->
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="footer-container">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Work Locations</h3>
+                <a href="#">Lagos</a>
+                <a href="#">Abuja</a>
+                <a href="#">Port-Harcort</a>
+                <a href="#">Ogun</a>
+                <a href="#">Oyo</a>
+            </div> 
+            
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">Home</a>
+                <a href="aboutus.html">Services</a>
+                <a href="contact.html">Contact</a>
+                <a href="advice.html">Career Advice</a>
+                <a href="findjobs.html">Find Jobs</a>
+            </div> 
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="#">instagram</a>
+                <a href="#">linkedin</a>
+            </div> 
+
+        </div>
+
+        <div class="credit">created with ❤️ Praise Ojo</div>
+
+    </div>
+
+</section>
+
+<!-- footer section ends -->
+<script src="index.js"></script>
+</body>
+</html>

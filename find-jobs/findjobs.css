@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --blue:#2323ac;
+    --lightblue:#4343be;
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background:#f7f7f7;
+    
+}
+
+/* section{
+    padding:2rem 9%;
+} */
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background:#fff;
+    padding:2rem 5%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color:#333;
+}
+
+header .logo span{
+    color:var(--blue);
+}
+
+nav {
+    display: flex;
+    gap: 29px;
+}
+
+header .navbar a{
+    color:#333;
+    font-size: 1.7rem;
+    padding:0 1.5rem;
+}
+
+.navbar {
+    align-items: center;
+}
+
+.navbar-two a:hover {
+    color: var(--lightblue);
+    transition: .5s;
+    border-radius: 9px;
+}
+
+.navbar button {
+    background-color: var(--lightblue);
+    border-radius: 18px;
+    padding: .6rem;
+    width: 10rem;
+    
+}
+
+.navbar button a:hover {
+    text-decoration: underline;
+    transition: 2s;
+    color: transparent;
+}
+
+
+
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3.5rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    color:#333;
+    background:rgb(250, 246, 246);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover{
+    background:var(--lightblue);
+    color:#fff;
+}
+
+.jobs{
+    min-height: 100vh;
+    /* background:url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jobs form{
+    margin-top: 7rem;
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    border:.1rem solid rgba(0,0,0,.2);
+    width:70rem;
+    padding:2rem;
+}
+
+.jobs form h3{
+    text-align: center;
+    color:#333;
+    font-size: 3rem;
+}
+
+.jobs form .buttons-container{
+    display: flex;
+    gap:1.5rem;
+}
+
+.jobs form .buttons-container .btn{
+    flex:1;
+}
+
+.jobs form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 2rem;
+}
+
+.jobs form .inputBox input,
+.jobs form .inputBox select{
+    flex:1 1 25rem;
+    border:.1rem solid #333;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    padding:1rem;
+    text-transform: none;
+}
+
+.jobs form .btn{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+
+
+.footer .footer-container{
+    background:#fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem;
+    width: 100vw;
+    margin-top: 14rem;
+    
+  }
+  
+  .footer .footer-container .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:7rem;
+    padding-left: 8rem;
+  }
+  
+
+.footer .footer-container .box-container .box{
+    flex:1 1 25rem;
+}
+
+.footer .footer-container .box-container .box h3{
+    font-size: 2.5rem;
+    color:#333;
+    padding:.5rem 0;
+}
+
+.footer .footer-container .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color:#666;
+    padding:.5rem 0;
+}
+
+.footer .footer-container .box-container .box a:hover{
+    color:var(--lightblue);
+    text-decoration: underline;
+}
+
+.footer .footer-container .credit{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color:#333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+  }

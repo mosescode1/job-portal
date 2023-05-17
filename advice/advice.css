@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --blue:#2323ac;
+    --lightblue:#4343be;
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    
+    
+    background-color: var(--light-red);
+    /* height: 100vh; */
+    
+}
+
+.container {
+    margin-left: 29rem;
+    width: 450px;
+    height: 550px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--lightblue);
+}
+
+.main-content {
+    width: 100%;
+    height: 300px;
+    padding: 50px 40px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 25px 31px rgba(0,0,0,0.5);
+}
+
+.text-area {
+    text-align: center;
+    font-size: 15px;
+    color: #262626;
+    line-height: 2;
+}
+
+.main-content .button-area {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+}
+
+.button-area .btn button {
+    background-color: var(--lightblue);
+    color: #fff;
+    border-radius: 18px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 12px 15px;
+}
+
+.button-area .btn button:hover {
+    color: var(--lightblue);
+    background-color: transparent;
+    border: 2px solid var(--lightblue);
+}
+
+
+
+
+
+
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background:#fff;
+    padding:2rem 5%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color:#333;
+}
+
+header .logo span{
+    color:var(--blue);
+}
+
+nav {
+    display: flex;
+    gap: 29px;
+}
+
+header .navbar a{
+    color:#333;
+    font-size: 1.7rem;
+    padding:0 1.5rem;
+}
+
+.navbar {
+    align-items: center;
+}
+
+.navbar-two a:hover {
+    color: var(--lightblue);
+    transition: .5s;
+    border-radius: 9px;
+}
+
+.navbar button {
+    background-color: var(--lightblue);
+    border-radius: 18px;
+    padding: .6rem;
+    width: 10rem;
+    
+}
+
+.navbar button a:hover {
+    text-decoration: underline;
+    transition: 2s;
+    color: transparent;
+}
+
+
+
+
+
+
+
+
+.footer .footer-container{
+    background:#fff;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem;
+    width: 100vw;
+    margin-top: 14rem;
+    
+  }
+  
+  .footer .footer-container .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:7rem;
+    padding-left: 8rem;
+  }
+  
+
+.footer .footer-container .box-container .box{
+    flex:1 1 25rem;
+}
+
+.footer .footer-container .box-container .box h3{
+    font-size: 2.5rem;
+    color:#333;
+    padding:.5rem 0;
+}
+
+.footer .footer-container .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color:#666;
+    padding:.5rem 0;
+}
+
+
+.footer .footer-container .box-container .box a:hover{
+    color:var(--lightblue);
+    text-decoration: underline;
+}
+
+.footer .footer-container .credit{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color:#333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+  }
+
+

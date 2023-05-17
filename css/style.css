@@ -1,0 +1,609 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --blue:#2323ac;
+    --lightblue:#4343be;
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
+
+body{
+    background:#f7f7f7;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.piccc {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+    
+}
+
+.piccc img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -2;
+    filter: brightness(.7);
+}
+
+.principal {
+    left: 25%;
+    top: 25%;
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    animation: myAnim 4s ease-in 1s 1 normal forwards;
+   
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+.principal h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 4.5vw;
+    font-weight: 800;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+}
+
+.principal p {
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.principal button {
+    margin-top: 30px;
+    background-color: var(--blue);
+    padding: 1.5rem;
+    border: none;
+    margin-right: 20px;
+ }
+
+.principal button a{
+    text-transform: uppercase;
+    color: #f7f7f7;
+    font-weight: 900;
+}
+
+ .principal button:hover {
+    font-size: 25px;
+     transition: 2s ;
+     background-color: #333;
+ }
+
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    padding: 1.2rem 2%;
+    box-shadow: 0 .9rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.6s;
+    background: #333;
+    align-items: center;
+    
+}
+
+.header-scrolled {
+    background-color: var(--lightblue);
+    box-shadow: 0 .9rem 1rem rgba(0,0,0,.1);
+   
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color:#fff;
+}
+
+header .logo span{
+    color:var(--blue);
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 29px;
+}
+header .navbar-two{
+    display: flex;
+    align-items: center;
+} 
+header .navbar-two ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+header .navbar-two a{
+    color:#fff;
+    font-size: 1.7rem;
+    padding:0 1.5rem;
+    margin-right: 10px;
+
+   
+}
+nav #icon{
+     display: none;
+}
+nav #icon .fa-bars{
+    font-size: 30px;
+    color: white;
+}
+
+.navbar-two a:hover {
+    background: white;
+    padding: 10px;
+    color: var(--lightblue);
+    transition: .5s;
+    border-radius: 9px;
+}
+
+.navbar .btn button {
+    background-color: blue;
+    border-radius: 18px;
+    padding: .7rem;
+    width: 10rem;
+    margin-right: 20px;
+}
+.navbar .btn button a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+
+
+/* nav and hheader styling ends here */
+
+
+/* job searching styling starts here */
+.job-search{
+    background: #333;
+    padding: 20px  10px 20px 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.job-search input {
+    margin: 10px;
+    padding: 10px;
+}
+
+.job-search select {
+    margin: 10px;
+    padding: 10px;
+}
+.job-search button{
+    padding: 10px;
+    width: 150px;
+    height: min-content;
+    place-self: center;
+    background: var(--blue);
+    color: #f7f7f7;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 900;
+}
+.job-search button:hover{
+    padding: 15px;
+    background: white;
+    border: 1px solid black;
+    color: black;
+    
+}
+/* job searching styling ends here */
+
+/********************** job categories starts here ******************************/
+.services{
+    padding: 30px;
+}
+.service-text{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 40px;
+}
+.grid-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 30px;
+    padding: 50px;
+} 
+.card{
+    padding: 20px;
+    background: white;
+    line-height: 2.5;
+}
+.card:hover{
+    box-shadow: -2px 3px 10px 0px rgba(0, 0, 0, 0.38);
+    transition: box-shadow 18ms ease-out;
+}
+.fa-solid,.fa-regular{
+    font-size: 70px;
+    color: #0ebf78;
+}
+.card p:first-child{
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: 10px;
+}
+.card p:last-child{
+    font-size: 1.5rem;
+    color: #0ebf78;
+    font-weight: 900;
+}
+/********************** job categories ends here **********************/
+
+/*  styling starts here */
+
+
+.something {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px 100px;
+    gap: 5%;
+}
+.something .pic{
+    width: 100%;
+    height: 100%;
+}
+
+.something .pic img{
+    width: 100%;
+    height: 100%;
+}
+.fillup{
+    padding: 20px;
+}
+.fillup h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+.fillup p {
+   line-height: 1.5;
+   font-size: 1.5rem;
+}
+
+
+.fillup button {
+    padding: 1rem;
+    width: 15rem;
+    border-radius: 18px;
+    border: 2px solid var(--lightblue);
+    background-color: transparent;
+    color: var(--lightblue);
+    margin-top: 3rem;
+}
+
+
+.fillup button:hover {
+    background-color: var(--lightblue);
+    color: #fff;
+    transition: .5s;
+}
+
+/* services styling ends here */
+
+
+/* testionomials starts here */
+.testimonials{
+    padding: 40px 100px;
+}
+.testimonial-text{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+.testimonial-grid-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1%;
+}
+.testimonial-card .fa-solid{
+    color:rgba(0, 0, 0, 0.709);
+}
+.testimonial-card{
+    background: #0ebf78;
+    padding: 20px;
+    color: white;
+}
+.testimonial-card:hover{
+    color: black;
+    background: #d9eee2;
+}
+.testimonial-card .icon p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.img-text{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-top: 10px;
+}
+.img-text img{
+    width: 70px;
+    border-radius: 50px;
+}
+.img-text  .text {
+    line-height: 2.0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+/* .contact {
+    margin-top: 10rem;
+    /* width: 75vw; 
+    height: 40rem;
+    padding: 2rem ;
+    background-color: #fff;
+    border-radius: 17px;
+    box-shadow: 0 25px 31px rgba(0,0,0,0.5);
+}
+
+.contact .heading {
+    font-size: 3rem;
+    margin-top: 3rem;
+}
+
+.contact .heading span {
+    color: var(--lightblue);
+    background-color: #fff;
+}
+
+
+.contact .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-bottom: 2rem; 
+}
+
+.contact .icons-container .icons{
+    flex:1 1 25rem;
+    /* background: #fff; 
+    padding:2.5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.contact .icons-container .icons img{
+    height:6rem;
+}
+
+.contact .icons-container .icons h3{
+    font-size: 2.5rem;
+    color:#333;
+    padding:1rem 0;
+}
+
+.contact .icons-container .icons p{
+    font-size: 1.5rem;
+    color:#666;
+    padding:.2rem 0;
+} */
+/* the footer section styling starts here */
+
+.footer .footer-container{
+    background: #333;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    padding:2rem;
+    margin-top: 10%;
+    
+    
+  }
+  
+  .footer .footer-container .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:7rem;
+    padding-left: 8rem;
+  }
+  
+
+.footer .footer-container .box-container .box{
+    flex:1 1 25rem;
+}
+
+.footer .footer-container .box-container .box h3{
+    font-size: 2.5rem;
+    color: #fff;
+    padding:.5rem 0;
+}
+
+.footer .footer-container .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    padding:.5rem 0;
+}
+
+.footer .footer-container .box-container .box a:hover{
+    color:var(--lightblue);
+    text-decoration: underline;
+}
+
+.footer .footer-container .credit{
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    border-top: .1rem solid rgba(0,0,0,.1);
+  }
+
+@media (max-width:768px){
+    .principal{
+        width: 70%;
+        line-height: 2.0;
+        left: 15%;
+    }
+    .principal h1{
+        font-size: 3rem;
+    }
+    .principal p{
+        font-size: 1.5rem;
+    }
+    .navbar .navbar-two ul{
+        position: absolute;
+        background: #333;
+        display: block;
+        top: 55px;
+        left: -100%;
+        width: max-content;
+        height: 100vh;
+        padding: 50px 40px;
+        transition: all .5s ease-out;
+    }
+    .navbar .navbar-two ul li{
+        margin-top: 30px;
+    }
+    .navbar #icon{
+        display: block;
+    }
+    .navbar ul.show{
+        left: 0;
+    }
+    .job-search{
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .grid-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .testimonial-grid-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .something{
+        grid-template-columns: 1fr;
+    }
+    .services{
+        padding: 5px;
+    }
+    .service-text{
+        font-size: 3rem;
+    }
+    .grid-card{
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .something{
+        padding: 15px;
+    }
+    .fillup{
+        padding: 15px;
+    }
+    .fillup h1{
+        font-size: 2.5rem;
+    }
+    .testimonials{
+        padding: 15px;
+    }
+    .testimonial-text{
+        margin-top: 40px;
+    }
+
+}
+
+@media (max-width:450px){
+    .principal{
+        width: 100%;
+        line-height: 1.5;
+        left: 1%;
+    }
+    .principal h1{
+        font-size: 2.5rem;
+    }
+    .principal p{
+        font-size: 1.3rem;
+    }
+    .grid-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .testimonial-grid-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .something{
+        grid-template-columns: 1fr;
+    }
+    .footer .footer-container .box-container{
+         padding-left: 2rem;
+  }
+
+}
+@media (max-width:435px){
+    .navbar .btn button {
+            display: none;
+            border: 2px solid red;
+        }
+    .principal p{
+        padding: 10px;
+    }
+}

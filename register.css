@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --blue:#2323ac;
+    --lightblue:#4343be;
+    --red:#ff5a3c;
+    --light-red:#f9edeb;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background:#f7f7f7;
+    
+}
+
+/* section{
+    padding:2rem 9%;
+} */
+
+
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 1000;
+    background: #fff;
+    padding:2rem 5%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color:#333;
+}
+
+header .logo span{
+    color:var(--blue);
+}
+
+nav {
+    display: flex;
+    gap: 29px;
+}
+
+header .navbar a{
+    color:#333;
+    font-size: 1.7rem;
+    padding:0 1.5rem;
+}
+
+.navbar {
+    align-items: center;
+}
+
+.navbar-two a:hover {
+    color: var(--lightblue);
+    transition: .5s;
+    border-radius: 9px;
+}
+
+.navbar button {
+    background-color: var(--lightblue);
+    border-radius: 18px;
+    padding: .6rem;
+    width: 10rem;
+    
+}
+
+.navbar button a:hover {
+    text-decoration: underline;
+    transition: 2s;
+    color: transparent;
+}
+
+
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+} */
+
+/* header {
+  text-align: center;
+} */
+
+/* nav {
+  font-size: 0.8rem;
+  padding: 20px;
+  background-color: rgb(46, 21, 21);
+} */
+
+/* nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */
+
+/* nav li {
+  margin: 0 13px;
+} */
+
+/* nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin: 5rem;
+} */
+
+/* nav a:hover {
+  background-color: rgb(143, 129, 129);
+  border-radius: 4px;
+} */
+
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 9rem;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid lightgray;
+  border-radius: 4px;
+  align-items: center;
+}
+
+input[type="submit"] {
+  background-color: var(--lightblue);
+  color: white;
+  padding: 12px;
+  width: 13rem;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid var(--lightblue);
+  transition: .3s;
+}
+
+
+
+
+
+
+
+
+.footer .footer-container{
+  background:#fff;
+  border:.1rem solid rgba(0,0,0,.2);
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  padding:2rem;
+  width: 100vw;
+  margin-top: 14rem;
+  
+}
+
+.footer .footer-container .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:7rem;
+  padding-left: 8rem;
+}
+
+.footer .footer-container .box-container .box{
+  flex:1 1 25rem;
+}
+
+.footer .footer-container .box-container .box h3{
+  font-size: 2.5rem;
+  color:#333;
+  padding:.5rem 0;
+}
+
+.footer .footer-container .box-container .box a{
+  display: block;
+  font-size: 1.5rem;
+  color:#666;
+  padding:.5rem 0;
+}
+
+.footer .footer-container .box-container .box a:hover{
+  color:var(--lightblue);
+  text-decoration: underline;
+}
+
+.footer .footer-container .credit{
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color:#333;
+  border-top: .1rem solid rgba(0,0,0,.1);
+}
+
+
+
