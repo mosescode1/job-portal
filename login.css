@@ -122,7 +122,7 @@ form{
 .field input,
 .field-one input {
   padding: 1.5rem;
-  width: 30rem;
+  width: 33rem;
 }
 .field-two{
   margin: 0 auto;
@@ -132,7 +132,7 @@ form{
   background-color: var(--lightblue);
   color: white;
   border-radius: 10px;
-  width: 30rem;
+  width: 33rem;
   margin: 10px auto;
   
 }
@@ -250,6 +250,19 @@ form{
   .navbar #icon {
     margin-right: 10px;
 
+  }
+  .field-two button {
+    width: 25rem;
+  }
+  .field input,
+  .field-one input {
+    width: 25rem;
+  }
+  .check-box label, .forget a{
+    font-size: 1.2rem;
+  }
+  .footer .footer-container .box-container{
+    padding-left: 2rem;
   }
 
 }
