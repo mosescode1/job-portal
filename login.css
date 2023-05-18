@@ -115,11 +115,14 @@ nav #icon .fa-bars{
   background-repeat: no-repeat;
   background-size: cover;
 }
+form{
+  padding: 10px;
+}
 
 .field input,
 .field-one input {
   padding: 1.5rem;
-  width: 35rem;
+  width: 30rem;
 }
 .field-two{
   margin: 0 auto;
@@ -129,7 +132,7 @@ nav #icon .fa-bars{
   background-color: var(--lightblue);
   color: white;
   border-radius: 10px;
-  width: 35rem;
+  width: 30rem;
   margin: 10px auto;
   
 }
@@ -239,5 +242,15 @@ nav #icon .fa-bars{
     left: 0;
   }
 }
+@media (max-width:435px) {
+  .navbar .btn button {
+    display: none;
+    
+  }
+  .navbar #icon {
+    margin-right: 10px;
 
+  }
+
+}
 

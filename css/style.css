@@ -603,4 +603,8 @@ nav #icon .fa-bars{
     .principal p{
         padding: 10px;
     }
+    .navbar #icon {
+    margin-right: 10px;
+
+  }
 }
