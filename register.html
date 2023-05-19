@@ -4,33 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery cdn link -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css file link  -->
     <link rel="stylesheet" href="register.css">
-    <title>Document</title>
+    <title>Registrattion page</title>
 </head>
+    <script>
+                $(document).ready(function () {
+        $("#icon").click(function () {
+            $("ul").toggleClass("show");
+        });
+        });
+    </script>
 <body>
-    <header>
+     <header id="bar">
 
-        <a href="#" class="logo"><span>W</span>OK</a>
-    
-        <nav class="navbar">
-            <div class="navbar-two">
-            <a href="index.html">home</a>
-            <a href="aboutus.html">About Us</a>
-            <a href="contact.html">contact</a>
-            <a href="advice.html">Career Advice</a>
-            <a href="findjobs.html">Find Jobs</a>
-            </div>
-            
-            
-            <button><a style="color: white; font-size: 15px;" href="login.html">Login</a></button>
-            <button><a style="color: white; font-size: 15px;" href="register.html">Register</a></button>
-                  
-        </nav>
-    
-    </header> 
+    <a href="#" class="logo"><span>W</span>OK</a>
 
+    <nav class="navbar">
+        <div  class="navbar-two">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="./advice/advice.html">Career Advice</a></li>
+                <li><a href="./find-jobs/findjobs.html">Find Jobs</a></li>
+                <li><!-- <a href="aboutus.html">About Us</a> --></li>
+                <li> <a href="./contact-us/contact.html">contact</a></li>
+                <div class="btn">
+                    <button><a href="#">Login</button>
+                    <button><a href="#">Register</a></button>
+                </div>
+            </ul>     
+        </div>
+        
+        <label for="toggle" id="icon">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </label>
+    </nav>
+
+</header> 
+<section>
+  <div class="form-wrapper">
     <form action="" method="POST">
-        <h2 style="margin-bottom: 3rem; font-size: 3.5rem;">Registration Info</h2>
+        <h2 style="margin-bottom: 3rem; font-size: 3.5rem; text-align: center; color: white;">Registration Info</h2>
 
         <div class="name">
           <label for="name">First Name:</label><br>
@@ -47,85 +65,78 @@
         </div>
        
         <div class="digits">
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br>
 
-        <label for="name">Phone Number:</label><br>
-        <input type="tel" name="number" id="number">
+          <label for="name">Phone Number:</label><br>
+          <input type="tel" name="number" id="number">
         </div>
         
+        <div class="personal-info">
+            <label for="birth">Date Of Birth:</label><br>
+            <input type="date" name="dob" id="dateOfBirth">
 
-        <!-- <label for="birth">Date Of Birth:</label><br>
+            <label for="gender">Gender:</label><br>
+            <select name="gender" id="gender">
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
 
-        <div class="birthday">
-        <label for="birth">Date:</label><br>
-        <input type="tel" id="date" name="date"><br>
+            <label for="state">State Of Residence:</label><br>
+            <select name="state" id="sor">
+              <option value="Cross-river">Cross-river</option>
+              <option value="Lagos">Lagos</option>
+              <option value="Abuja">Abuja</option>
+              <option value="PortHarcourt">PortHarcourt</option>
+            </select>
 
-        <label for="birth">Month:</label><br>
-        <input type="tel" id="month" name="month"><br>
-
-        <label for="birth">Year:</label><br>
-        <input type="tel" id="year" name="year"><br>
-        </div> -->
+            <label for="last-name">House Address:</label><br>
+            <input type="text" id="address" name="address"><br>
+        </div> 
         
-        <!-- <label for="gender">Gender:</label><br>
-        <select name="gender" id="gender">
-          <p>jjjj</p>
-          <option value="female">Female</option>
-          <option value="male">Male</option>
-        </select>
+        <div class="education">
+          <label for="degree">Degree:</label><br>
+          <select name="state" id="sor">
+            <option value="ssce">SSCE</option>
+            <option value="bsc">BSc</option>
+            <option value="msc">MSc</option>
+          </select>
+          <label for="university">University:</label><br>
+          <input type="text" id="university" name="university"><br>
+        </div>
 
-        <label for="state">State Of Residence:</label><br>
-        <select name="state" id="sor">
-          <option value="Lagos">Lagos</option>
-          <option value="Abuja">Abuja</option>
-          <option value="PortHarcourt">PortHarcourt</option>
-        </select>
+        <div class="work-experience">
+            <label for="listing">Joblisting:</label><br>
+            <select name="listing" id="job-list">
+              <option value="fds">Front Desk Secretary</option>
+              <option value="hra">Human Resources Assistant</option>
+              <option value="mm">Marketing Manager</option>
+              <option value="sd">Software Developer</option>
+              <option value="se">Software Engineer</option>
+              <option value="wd">Website Developer</option>
+            </select>
 
-        <label for="last-name">House Address:</label><br>
-        <input type="text" id="address" name="address"><br> -->
+            <label for="company">Company:</label><br>
+            <input type="text" id="company" name="company"><br>
 
-        <!-- <h2>Education</h2>
+            <label for="position">Position:</label><br>
+            <input type="text" id="position" name="position"><br>
 
-      <label for="degree">Degree:</label><br>
-      <select name="state" id="sor">
-        <option value="ssce">SSCE</option>
-        <option value="bsc">BSc</option>
-        <option value="msc">MSc</option>
-      </select>
+            <label for="passport">Passport:</label><br>
+            <input type="file" id="passport" name="passport"><br>
 
-      <label for="university">University:</label><br>
-      <input type="text" id="university" name="university"><br>
+            <label for="resume">Resume (CV):</label><br>
+            <input type="file" id="resume" name="resume"><br>
 
-      <h2>Job listing of interest</h2>
-      <label for="listing">Joblisting:</label><br>
-      <select name="listing" id="job-list">
-        <option value="fds">Front Desk Secretary</option>
-        <option value="hra">Human Resources Assistant</option>
-        <option value="mm">Marketing Manager</option>
-        <option value="sd">Software Developer</option>
-        <option value="se">Software Engineer</option>
-        <option value="wd">Website Developer</option>
-      </select>
-
-      <h2>Work Experience</h2>
-      <label for="company">Company:</label><br>
-      <input type="text" id="company" name="company"><br>
-
-      <label for="position">Position:</label><br>
-      <input type="text" id="position" name="position"><br>
-
-      <label for="passport">Passport:</label><br>
-      <input type="file" id="passport" name="passport"><br>
-
-        <label for="resume">Resume (CV):</label><br>
-        <input type="file" id="resume" name="resume"><br>
-
-        <label for="cover_letter">Cover Letter:</label><br>
-        <textarea id="cover_letter" name="cover_letter"></textarea><br> -->
+            <label for="cover_letter">Cover Letter:</label><br>
+            <textarea id="cover_letter" name="cover_letter"></textarea><br> 
+        </div>
+     
 
         <input type="submit" value="Submit">
       </form> 
+    </div>
+  </section>
 
 
       <section class="footer">
@@ -162,7 +173,7 @@
     
             </div>
     
-            <div class="credit">© all rights reserved! </div>
+            <div class="credit">created with ❤️ Praise Ojo</div>
     
         </div>
     

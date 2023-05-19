@@ -23,72 +23,99 @@ html{
     scroll-padding-top: 7rem;
 }
 
-body{
-    background:#f7f7f7;
-    
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 1.2rem 2%;
+  box-shadow: 0 .9rem 1rem rgba(0, 0, 0, .1);
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.6s;
+  background: #333;
+  align-items: center;
+
 }
 
-/* section{
-    padding:2rem 9%;
-} */
+.header-scrolled {
+  background-color: var(--lightblue);
+  box-shadow: 0 .9rem 1rem rgba(0, 0, 0, .1);
 
-
-
-header{
-    position: fixed;
-    top:0; left:0; right:0;
-    z-index: 1000;
-    background: #fff;
-    padding:2rem 5%;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    display: flex;
-    justify-content: space-between;
 }
 
-header .logo{
-    font-weight: bolder;
-    font-size: 2.5rem;
-    color:#333;
+header .logo {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: #fff;
 }
 
-header .logo span{
-    color:var(--blue);
-}
-
-nav {
-    display: flex;
-    gap: 29px;
-}
-
-header .navbar a{
-    color:#333;
-    font-size: 1.7rem;
-    padding:0 1.5rem;
+header .logo span {
+  color: var(--blue);
 }
 
 .navbar {
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 29px;
 }
 
-.navbar-two a:hover {
-    color: var(--lightblue);
-    transition: .5s;
-    border-radius: 9px;
+header .navbar-two {
+  display: flex;
+  align-items: center;
 }
 
-.navbar button {
-    background-color: var(--lightblue);
-    border-radius: 18px;
-    padding: .6rem;
-    width: 10rem;
-    
+header .navbar-two ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
 }
 
-.navbar button a:hover {
-    text-decoration: underline;
-    transition: 2s;
-    color: transparent;
+header .navbar-two li a {
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 0 1.5rem;
+  margin-right: 10px;
+
+
 }
+
+nav #icon {
+  display: none;
+}
+
+nav #icon .fa-bars {
+  font-size: 30px;
+  color: white;
+}
+
+.navbar-two li a:hover {
+  background: white;
+  padding: 10px;
+  color: var(--lightblue);
+  transition: .5s;
+  border-radius: 9px;
+}
+
+.navbar .navbar-two .btn button {
+  background-color: blue;
+  border-radius: 18px;
+  padding: .7rem;
+  width: 10rem;
+  margin-right: 20px;
+}
+
+.navbar .btn button a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+
+
+/* nav and hheader styling ends here */
 
 
 /* body {
@@ -130,7 +157,14 @@ header .navbar a{
 } */
 
 
-
+.form-wrapper{
+    display: grid;
+      background: url(./images/laptop.jpeg);
+      height: 100%;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover; 
+}
 
 form {
   display: flex;
@@ -139,28 +173,35 @@ form {
   margin: 0 auto;
   padding: 20px;
   margin-top: 9rem;
+  
 }
 
 label {
   font-weight: bold;
-  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #fff;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 input[type="date"],
+input[type="password"],
 select,
 textarea {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 1rem;
+  margin: 10px 0;
   box-sizing: border-box;
-  border: 2px solid lightgray;
+  border: 2px solid rgb(49, 49, 49);
   border-radius: 4px;
   align-items: center;
 }
 
+input[type="file"]{
+  margin: 10px 0 ;
+  color: #fff;
+}
 input[type="submit"] {
   background-color: var(--lightblue);
   color: white;
@@ -169,6 +210,7 @@ input[type="submit"] {
   font-size: 1.3rem;
   border-radius: 20px;
   cursor: pointer;
+  margin: 10px auto;
 }
 
 input[type="submit"]:hover {
@@ -184,55 +226,125 @@ input[type="submit"]:hover {
 
 
 
-
-.footer .footer-container{
-  background:#fff;
-  border:.1rem solid rgba(0,0,0,.2);
-  border-radius: .5rem;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-  padding:2rem;
+.footer .footer-container {
+  background: #353535;
+  border: .1rem solid rgba(0, 0, 0, .2);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  padding: 2rem;
   width: 100vw;
-  margin-top: 14rem;
-  
+  color: #fff;
+
 }
 
-.footer .footer-container .box-container{
+.footer .footer-container .box-container {
   display: flex;
   flex-wrap: wrap;
-  gap:7rem;
+  gap: 7rem;
   padding-left: 8rem;
+  color: #fff;
+  padding-top: 50px;
 }
 
-.footer .footer-container .box-container .box{
-  flex:1 1 25rem;
+
+.footer .footer-container .box-container .box {
+  flex: 1 1 25rem;
 }
 
-.footer .footer-container .box-container .box h3{
+.footer .footer-container .box-container .box h3 {
   font-size: 2.5rem;
-  color:#333;
-  padding:.5rem 0;
+
+  padding: .5rem 0;
 }
 
-.footer .footer-container .box-container .box a{
+.footer .footer-container .box-container .box a {
   display: block;
   font-size: 1.5rem;
-  color:#666;
-  padding:.5rem 0;
+  color: #fff;
+  padding: .5rem 0;
 }
 
-.footer .footer-container .box-container .box a:hover{
-  color:var(--lightblue);
+.footer .footer-container .box-container .box a:hover {
+  color: var(--lightblue);
   text-decoration: underline;
 }
 
-.footer .footer-container .credit{
+.footer .footer-container .credit {
   margin-top: 2rem;
   padding-top: 1rem;
   font-size: 1.2rem;
   text-align: center;
-  color:#333;
-  border-top: .1rem solid rgba(0,0,0,.1);
+  color: #fff;
+  border-top: .1rem solid rgba(0, 0, 0, .1);
 }
 
+@media (max-width:789px) {
+  .navbar .navbar-two ul {
+    position: absolute;
+    background: #333;
+    display: block;
+    top: 55px;
+    left: -100%;
+    width: max-content;
+    height: 100vh;
+    padding: 50px 40px;
+    transition: all .5s ease-out;
+  }
 
+  .navbar .navbar-two ul li {
+    margin-top: 30px;
+  }
+
+  .navbar #icon {
+    display: block;
+
+  }
+
+  .navbar ul.show {
+    left: 0;
+  }
+  .navbar .navbar-two .btn button{
+    display: block;
+    margin-top: 20px;
+  }
+  form{
+    width: 80%;
+  }
+}
+
+@media (max-width:435px) {
+  .navbar #icon {
+    margin-right: 10px;
+
+  }
+
+  .field-two button {
+    width: 25rem;
+  }
+
+  .field input,
+  .field-one input {
+    width: 25rem;
+  }
+
+  form{
+    width: 100%;
+  }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="password"]{
+    padding: 0.8rem;
+  }
+
+  .check-box label,
+  .forget a {
+    font-size: 1.2rem;
+  }
+
+  .footer .footer-container .box-container {
+    padding-left: 2rem;
+  }
+
+}
 

@@ -69,7 +69,7 @@ header .navbar-two ul{
     justify-content: center;
     list-style: none;
 }
-header .navbar-two a{
+header .navbar-two li a{
     color:#fff;
     font-size: 1.7rem;
     padding:0 1.5rem;
@@ -85,7 +85,7 @@ nav #icon .fa-bars{
     color: white;
 }
 
-.navbar-two a:hover {
+.navbar-two li a:hover {
     background: white;
     padding: 10px;
     color: var(--lightblue);
@@ -93,7 +93,7 @@ nav #icon .fa-bars{
     border-radius: 9px;
 }
 
-.navbar .btn button {
+.navbar .navbar-two .btn button {
     background-color: blue;
     border-radius: 18px;
     padding: .7rem;
@@ -211,10 +211,9 @@ form{
   padding-top: 1rem;
   font-size: 1.2rem;
   text-align: center;
-  color:#333;
+  color:#fff;
   border-top: .1rem solid rgba(0,0,0,.1);
 }
-
 
 @media (max-width:789px) {
   .navbar .navbar-two ul {
@@ -241,12 +240,12 @@ form{
   .navbar ul.show {
     left: 0;
   }
+  .navbar .navbar-two .btn button{
+    display: block;
+    margin-top: 20px;
+  }
 }
 @media (max-width:435px) {
-  .navbar .btn button {
-    display: none;
-    
-  }
   .navbar #icon {
     margin-right: 10px;
 
