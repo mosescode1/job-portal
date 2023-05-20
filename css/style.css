@@ -267,9 +267,9 @@ nav #icon .fa-bars{
     padding: 50px;
 } 
 .card{
-    padding: 20px;
+    padding: 40px;
     background: white;
-    line-height: 2.5;
+    line-height: 2.0;
 }
 .card:hover{
     box-shadow: -2px 3px 10px 0px rgba(0, 0, 0, 0.38);
@@ -295,22 +295,25 @@ nav #icon .fa-bars{
 
 
 .something {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 10px 100px;
-    gap: 5%;
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .something .pic{
-    width: 100%;
+    width: 50%;
     height: 100%;
 }
 
 .something .pic img{
     width: 100%;
     height: 100%;
+   
 }
 .fillup{
     padding: 20px;
+    width: 50%;
 }
 .fillup h1 {
     font-size: 4rem;
@@ -346,7 +349,14 @@ nav #icon .fa-bars{
 
 /* testionomials starts here */
 .testimonials{
-    padding: 40px 100px;
+    padding: 40px 50px;
+}
+.testimonial-grid-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 .testimonial-text{
     text-align: center;
@@ -354,11 +364,7 @@ nav #icon .fa-bars{
     font-weight: 900;
     margin-bottom: 50px;
 }
-.testimonial-grid-card{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1%;
-}
+
 .testimonial-card .fa-solid{
     color:rgba(0, 0, 0, 0.709);
 }
@@ -366,6 +372,7 @@ nav #icon .fa-bars{
     background: #0ebf78;
     padding: 20px;
     color: white;
+    width: 270px;
 }
 .testimonial-card:hover{
     color: black;
@@ -497,6 +504,34 @@ nav #icon .fa-bars{
     border-top: .1rem solid rgba(0,0,0,.1);
   }
 
+@media (max-width: 1024px){
+    .fillup h1 {
+        font-size: 3rem;
+    }
+
+    .fillup p {
+        font-size: 1rem;
+    }
+    .grid-card {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 15px;
+    }
+    
+    .card {
+        padding: 20px;
+        line-height: 1.5;
+    }
+    .card p:first-child{
+        font-size: 1.5rem;
+        font-weight: 900;
+        margin-top: 15px;
+    }
+    .card p:last-child{
+        margin-top: 10px;
+    }
+
+}
+
 @media (max-width:789px){
     header{
         position: fixed;
@@ -545,11 +580,21 @@ nav #icon .fa-bars{
     .grid-card{
         grid-template-columns: repeat(2, 1fr);
     }
-    .testimonial-grid-card{
-        grid-template-columns: repeat(2, 1fr);
-    }
     .something{
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        padding: 15px;
+    }
+    .something .pic{
+        width: 100%;
+    }
+    .fillup {
+        width: 100%;
+    }
+    .fillup h1 {
+        font-size: 2.5rem;
+    }
+    .fillup p{
+        font-size: 1.5rem;
     }
     .services{
         padding: 5px;
@@ -561,17 +606,8 @@ nav #icon .fa-bars{
         padding: 10px;
         margin-top: 20px;
     }
-    .something{
-        padding: 15px;
-    }
-    .fillup{
-        padding: 15px;
-    }
-    .fillup h1{
-        font-size: 2.5rem;
-    }
     .testimonials{
-        padding: 15px;
+        padding: 5px;
     }
     .testimonial-text{
         margin-top: 40px;
@@ -594,17 +630,11 @@ nav #icon .fa-bars{
     .grid-card{
         grid-template-columns: repeat(1, 1fr);
     }
-    .testimonial-grid-card{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .something{
-        grid-template-columns: 1fr;
     }
     .footer .footer-container .box-container{
          padding-left: 2rem;
   }
 
-}
 @media (max-width:435px){
     .principal p{
         padding: 10px;
