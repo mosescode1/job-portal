@@ -288,6 +288,7 @@ input[type="submit"]:hover {
     height: 100vh;
     padding: 50px 40px;
     transition: all .5s ease-out;
+
   }
 
   .navbar .navbar-two ul li {

@@ -20,7 +20,6 @@ window.addEventListener('scroll', changeBg)
 
 
 
-
 // const header = document.querySelector('.header');
 
 // window.addEventListener('scroll', () => {

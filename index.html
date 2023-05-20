@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WOK</title>
-    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <!-- jquery script -->
+<script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <!-- animate on scroll Css link -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom css file link  -->
@@ -15,12 +18,12 @@
 
     <div class="piccc">
         <img src="./images/photo-9.avif" alt="">
-        <div class="principal">
+        <div class="principal" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="1500">>
             <h1>Find the best Job that Suits You</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem veritatis iusto iure dolorem consequatur officiis totam beatae doloremque quae nobis</p>
         
         <button><a  href="#">Search a job</a></button>
-        <button><a  href="#">Hire a talent</a></button>
+        <button><a  href="#">Post a  Job</a></button>
               
         </div>
     </div>
@@ -90,9 +93,9 @@
                 <h1>Explore Categories</h1>
             </div>
                 
-            <div class="grid-card">
+            <div class="grid-card" data-aos="fade-right" data-aos-duration="1000" data-aos-easing="linear" > 
                 <a href="#">
-                    <div class="card">
+                    <div class="card" >
                         <div class="icon">
                         <i class="fa-solid fa-mail-bulk"></i>
                     </div>
@@ -197,10 +200,10 @@
 <section class="something">
 
     <div class="pic">
-        <img src="./images/photo1.avif" alt="">
+        <img src="./images/photo1.avif" alt="" data-aos="flip-up" data-aos-duration="2000">
     </div>
 
-    <div class="fillup">
+    <div class="fillup" data-aos="slide-left" data-aos-duration="2000">
         <h1>We Help To Get The Best Job And Find A Talent</h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit impedit tempore praesentium labore numquam veritatis, molestias modi ab eveniet inventore similique id. Ipsam sequi magni voluptas veritatis exercitationem perferendis, iure fugiat aliquid adipisci! Quasi est fuga pariatur assumenda ipsa suscipit facere exercitationem recusandae nihil. Quasi, necessitatibus laborum earum illum explicabo rerum nisi voluptate veniam modi impedit, magni illo! Repudiandae, dolor?</p>
         <a href="./aboutus/aboutus.html"><button>Learn More <span>&#8594;</span></button></a>
@@ -214,7 +217,7 @@
         <h3>OUR CLIENT SAYS</h3>
     </div>
     <div class="testimonial-grid-card card-slider">
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-duration="1000">
             <div class="icon">
                 <i class="fa-sharp fa-solid fa-quote-left"></i>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro molestiae excepturi odit explicabo, rem ut minus, magni quos delectus pariatur cumque laboriosam repellendus consequuntur ex ducimus, nesciunt sunt voluptates non.</p>
@@ -228,7 +231,7 @@
             </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-duration="1500">
             <div class="icon">
                 <i class="fa-sharp fa-solid fa-quote-left"></i>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro molestiae excepturi odit explicabo, rem ut minus, magni quos delectus pariatur cumque laboriosam repellendus consequuntur ex ducimus, nesciunt sunt voluptates non.</p>
@@ -242,7 +245,7 @@
             </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-duration="2000">
             <div class="icon">
                 <i class="fa-sharp fa-solid fa-quote-left"></i>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro molestiae excepturi odit explicabo, rem ut minus, magni quos delectus pariatur cumque laboriosam repellendus consequuntur ex ducimus, nesciunt sunt voluptates non.</p>
@@ -256,7 +259,7 @@
             </div>
         </div>
 
-        <div class="testimonial-card">
+        <div class="testimonial-card" data-aos="fade-up" data-aos-duration="2500">
             <div class="icon">
                 <i class="fa-sharp fa-solid fa-quote-left"></i>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro molestiae excepturi odit explicabo, rem ut minus, magni quos delectus pariatur cumque laboriosam repellendus consequuntur ex ducimus, nesciunt sunt voluptates non.</p>
@@ -353,5 +356,10 @@
 
 <!-- footer section ends -->
 <script src="index.js"></script>
+<!-- aos javascript libary -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

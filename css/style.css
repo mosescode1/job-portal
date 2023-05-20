@@ -22,7 +22,7 @@ a{
 
 html{
     font-size: 62.5%;
-    overflow-x: hidden;
+animation: myAnim 4s ease-in 1s 1 normal forwards;    overflow-x: hidden;
 }
 
 body{
@@ -54,11 +54,11 @@ body{
     position: absolute;
     width: 50%;
     text-align: center;
-    animation: myAnim 4s ease-in 1s 1 normal forwards;
+    /*  */
    
 }
 
-@keyframes myAnim {
+/* @keyframes myAnim {
 	0% {
 		transform: scale3d(1, 1, 1);
 	}
@@ -86,7 +86,7 @@ body{
 	100% {
 		transform: scale3d(1, 1, 1);
 	}
-}
+} */
 
 .principal h1 {
     font-family:Arial, Helvetica, sans-serif;
@@ -134,6 +134,7 @@ header{
     background: #333;
     align-items: center;
     width: 100vw;
+    z-index: 1000;
     
 }
 
