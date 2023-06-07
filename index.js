@@ -1,5 +1,5 @@
 function changeBg() {
-    var bar = document.getElementById('bar');
+    let bar = document.getElementById('bar');
     var scrollValue = window.scrollY;
     if(scrollValue < 520) {
         bar.classList.remove('header-scrolled');

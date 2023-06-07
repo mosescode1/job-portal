@@ -6,29 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../find-jobs/findjobs.css">
     <title>Find Jobs</title>
+     <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function () {
+        $("#icon").click(function () {
+            $("ul").toggleClass("show");
+        });
+        });
+    </script>
 </head>
 <body>
 
-    <header>
+<!-- header section starts  -->
 
-        <a href="#" class="logo"><span>W</span>OK</a>
-    
-        <nav class="navbar">
-            <div class="navbar-two">
-            <a href="../index.html">home</a>
-            <a href="../aboutus/aboutus.html">About Us</a>
-            <a href="../contact-us/contact.html">contact</a>
-            <a href="../advice/advice.html">Career Advice</a>
-            <a href="../find-jobs/findjobs.html">Find Jobs</a>
-            </div>
-            
-            
-            <button><a style="color: white; font-size: 15px;" href="login.html">Login</a></button>
-            <button><a style="color: white; font-size: 15px;" href="register.html">Register</a></button>
-                  
-        </nav>
-    
-    </header> 
+<header id="bar">
+
+    <a href="#" class="logo"><span>W</span>OK</a>
+
+    <nav class="navbar">
+        <div  class="navbar-two">
+            <ul>
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../advice/advice.html">Career Advice</a></li>
+                <li><a href="../find-jobs/findjobs.html">Find Jobs</a></li>
+                <!-- <li> <a href="aboutus.html">About Us</a></li> -->
+                <li> <a href="../contact-us/contact.html">contact</a></li>
+                <div class="btn">
+                <button><a href="../login.html">Login</button>
+                <button><a href="../register.html">Register</a></button>
+            </div> 
+            </ul>  
+               
+        </div>
+       
+        <label for="toggle" id="icon">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </label>
+    </nav>
+
+</header> 
+
+<!-- header section ends -->
 
 
     <section class="jobs" id="jobs">
@@ -37,15 +57,15 @@
             <h3>Find The Perfect Job For You</h3>
     
             <div class="buttons-container">
-                <a href="#" class="btn">for rent</a>
-                <a href="#" class="btn">for sell</a>
+                <a href="#" class="btns">Jobs</a>
+                <a href="#" class="btns">Hire</a>
             </div>
     
             <div class="inputBox">
-                <input type="search" name="" placeholder="neighborhood" id="">
+                <input type="search" name="" placeholder="Location" id="">
                 <input type="search" name="" placeholder="city" id="">
                 <select name="" id="">
-                    <option value="" disabled hidden selected>minimum price</option>
+                    <option value="" disabled hidden selected>Salary price</option>
                     <option value="$5000">$5000</option>
                     <option value="$10000">$10000</option>
                     <option value="$15000">$15000</option>
@@ -53,7 +73,7 @@
                     <option value="$25000">$25000</option>
                 </select>
                 <select name="" id="">
-                    <option value="" disabled hidden selected>maximum price</option>
+                    <option value="" disabled hidden selected>Expected price</option>
                     <option value="$30000">$30000</option>
                     <option value="$35000">$35000</option>
                     <option value="$40000">$40000</option>
@@ -61,20 +81,20 @@
                     <option value="$50000">$50000</option>
                 </select>
                 <select name="" id="">
-                    <option value="" disabled hidden selected>property status</option>
-                    <option value="Ready To Move">Ready To Move</option>
-                    <option value="under construction">under construction</option>
-                    <option value="furnished">furnished</option>
-                    <option value="semi-furnished">semi-furnished</option>
-                    <option value="unfurnished">unfurnished</option>
+                    <option value="" disabled hidden selected>Job Status</option>
+                    <option value="Ready To Move">Employed</option>
+                    <option value="under construction">Unemployed</option>
+                    <option value="furnished">Intern</option>
+                    <option value="semi-furnished">Student</option>
+                    <option value="unfurnished">Part-timer</option>
                 </select>
                 <select name="" id="">
-                    <option value="" disabled hidden selected>property type</option>
-                    <option value="flat">flat</option>
-                    <option value="house">house</option>
-                    <option value="shop">shop</option>
-                    <option value="warehouse">warehouse</option>
-                    <option value="land">land</option>
+                    <option value="" disabled hidden selected>Job type</option>
+                    <option value="flat">Mechanical Engineering</option>
+                    <option value="house">electircal Engineering</option>
+                    <option value="shop">Computer operator</option>
+                    <option value="warehouse">English Teacher</option>
+                    <option value="land">Content Creator</option>
                 </select>
                 <select name="" id="">
                     <option value="" disabled hidden selected>BHK</option>
@@ -110,7 +130,7 @@
                 </select>
             </div>
     
-            <input type="submit" value="search property" class="btn">
+            <input type="submit" value="search" class="btns">
     
         </form>
     </section>

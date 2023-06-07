@@ -15,6 +15,10 @@
     text-decoration: none;
     text-transform: capitalize;
 }
+a {
+    color: black;
+    text-decoration: none;
+}
 
 html{
     font-size: 62.5%;
@@ -25,6 +29,9 @@ html{
 
 body{
     background:#f7f7f7;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
     
 }
 
@@ -32,82 +39,116 @@ body{
     padding:2rem 9%;
 } */
 
-header{
+header {
     position: fixed;
-    top:0; left:0; right:0;
-    z-index: 1000;
-    background:#fff;
-    padding:2rem 5%;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1.2rem 2%;
+    box-shadow: 0 .9rem 1rem rgba(0, 0, 0, .1);
     display: flex;
     justify-content: space-between;
+    transition: all 0.6s;
+    background: #333;
+    align-items: center;
+    width: 100vw;
+    z-index: 1000;
+
 }
 
-header .logo{
+.header-scrolled {
+    background-color: var(--lightblue);
+    box-shadow: 0 .9rem 1rem rgba(0, 0, 0, .1);
+
+}
+
+header .logo {
     font-weight: bolder;
     font-size: 2.5rem;
-    color:#333;
+    color: #fff;
 }
 
-header .logo span{
-    color:var(--blue);
-}
-
-nav {
-    display: flex;
-    gap: 29px;
-}
-
-header .navbar a{
-    color:#333;
-    font-size: 1.7rem;
-    padding:0 1.5rem;
+header .logo span {
+    color: var(--blue);
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 29px;
+}
+
+header .navbar-two {
+    display: flex;
     align-items: center;
 }
 
-.navbar-two a:hover {
+header .navbar-two ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+header .navbar-two li a {
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 0 1.5rem;
+    margin-right: 10px;
+}
+
+nav #icon {
+    display: none;
+}
+
+nav #icon .fa-bars {
+    font-size: 30px;
+    color: white;
+}
+
+.navbar-two li a:hover {
+    background: white;
+    padding: 10px;
     color: var(--lightblue);
     transition: .5s;
     border-radius: 9px;
 }
 
-.navbar button {
-    background-color: var(--lightblue);
+.navbar .navbar-two .btn button {
+    background-color: blue;
     border-radius: 18px;
-    padding: .6rem;
+    padding: .7rem;
     width: 10rem;
-    
+    margin-right: 20px;
 }
 
-.navbar button a:hover {
-    text-decoration: underline;
-    transition: 2s;
-    color: transparent;
+.navbar .btn button a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 
 
-
-
-.btn{
+.buttons-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.btns{
     margin-top: 1rem;
-    display: inline-block;
     padding:.8rem 3.5rem;
     border-radius: .5rem;
     font-size: 1.7rem;
-    color:#333;
-    background:rgb(250, 246, 246);
+    color:#000000;
+    width: 100%;
     cursor: pointer;
-    text-align: center;
+    text-align: center;                                                                                                                                                                                                                         
 }
 
-.btn:hover{
+.btns:hover:hover{
     background:var(--lightblue);
     color:#fff;
-}
+} 
 
 .jobs{
     min-height: 100vh;
@@ -169,52 +210,87 @@ header .navbar a{
 
 
 
-.footer .footer-container{
-    background:#fff;
-    border:.1rem solid rgba(0,0,0,.2);
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    padding:2rem;
-    width: 100vw;
-    margin-top: 14rem;
-    
-  }
-  
-  .footer .footer-container .box-container{
+.footer .footer-container {
+    background: #333;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 40px;
+    margin-top: 10%;
+
+
+}
+
+.footer .footer-container .box-container {
     display: flex;
     flex-wrap: wrap;
-    gap:7rem;
+    gap: 7rem;
     padding-left: 8rem;
-  }
-  
-
-.footer .footer-container .box-container .box{
-    flex:1 1 25rem;
 }
 
-.footer .footer-container .box-container .box h3{
+
+.footer .footer-container .box-container .box {
+    flex: 1 1 25rem;
+}
+
+.footer .footer-container .box-container .box h3 {
     font-size: 2.5rem;
-    color:#333;
-    padding:.5rem 0;
+    color: #fff;
+    padding: .5rem 0;
 }
 
-.footer .footer-container .box-container .box a{
+.footer .footer-container .box-container .box a {
     display: block;
     font-size: 1.5rem;
-    color:#666;
-    padding:.5rem 0;
+    color: #fff;
+    padding: .5rem 0;
 }
 
-.footer .footer-container .box-container .box a:hover{
-    color:var(--lightblue);
+.footer .footer-container .box-container .box a:hover {
+    color: var(--lightblue);
     text-decoration: underline;
 }
 
-.footer .footer-container .credit{
+.footer .footer-container .credit {
     margin-top: 2rem;
     padding-top: 1rem;
     font-size: 1.2rem;
     text-align: center;
-    color:#333;
-    border-top: .1rem solid rgba(0,0,0,.1);
-  }
+    color: #fff;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+
+
+  @media (max-width:789px) {
+      header {
+          position: fixed;
+      }
+
+       .navbar .navbar-two ul{
+        position: absolute;
+        background: #333;
+        display: block;
+        top: 53px;
+        left: -100vw;
+        width: max-content;
+        height: 100vh;
+        padding: 50px 40px;
+        transition: all .5s ease-out;
+    }
+        .navbar .navbar-two ul li{
+            margin-top: 30px;
+    }
+        .navbar #icon{
+            display: block;
+            
+    }
+        .navbar ul.show{
+            left: 0;
+    }
+        .navbar .navbar-two .btn button{
+            display: block;
+            margin-top: 20px;
+            margin-left: 10px;
+    }
+
+    }
